@@ -1,33 +1,18 @@
-div {
-  padding: 0px;
+body {
+  font-family: 'Press Start 2P', serif;
+  background: #e7bcbc;
+}
+
+.container {
+  background: #d60606;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px 3px;
 }
 
 #pokedex1 {
   text-align: left;
   padding: 0px;
-}
-
-body {
-  font-family: 'Press Start 2P', serif;
-  background: #c1d5d6;
-}
-
-#ImagenPokemon {
-  padding: 0;
-  margin: 1rem;
-  background: #4e7375;
-  border-radius: 17px;
-  box-shadow: inset 0px 0px 20px 5px;
-  border: 0.5rem solid rgb(255,255,255) ;
-  text-align: center;
-}
-
-#IdPokemon {
-  background: #4e7375;
-  border-radius: 17px;
-  margin: 1rem;
-  border: 0.32rem solid rgb(255,255,255) ;
-  box-shadow: inset 0px 0px 20px 0px;
 }
 
 #pokedex2 {
@@ -39,6 +24,40 @@ body {
   height: 100%;
 }
 
+#aquivaelbuscador {
+  border-radius: 17px;
+  box-shadow: inset 0px 0px 4px 0px rgb(0,0,0);
+  text-shadow: 0px 0px 0px rgb(0,0,0);
+  text-align:center;
+  color: rgb(0,0,0);
+  border-style: solid;
+  border-color: rgb(0,0,0);
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  line-height: 24px;
+  text-size-adjust: 80%;
+}
+
+#ImagenPokemon {
+  padding: 0;
+  margin: 1rem;
+  background: #4e7375;
+  border-radius: 17px;
+  box-shadow: inset 0px 0px 20px 5px;
+  border: 0.5rem solid rgb(255,255,255) ;
+  text-align: center;
+  height: 420px;
+}
+
+#IdPokemon {
+  background: #4e7375;
+  border-radius: 17px;
+  margin: 1rem;
+  border: 0.32rem solid rgb(255,255,255) ;
+  box-shadow: inset 0px 0px 20px 0px;
+}
+
 #aquivaelid {
   padding: 0;
   color: rgb(68,242,7);
@@ -48,21 +67,26 @@ body {
   text-shadow: 0px 0px 3px rgb(0,0,0);
 }
 
+#aquivaeltipo {
+  margin: 0;
+  padding: 0;
+  color: rgb(68,242,7);
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 0px 0px 3px rgb(0,0,0);
+}
 
 #aquivaelpoke {
   margin: 0;
   padding: 2rem;
-  width: 50%;
+  width: 70%;
   height: 100%;
   font-size: 24px;
   text-align: center;
 }
-#BotonesPokemon {
-  padding: 0;
-}
 
-#pokedex8 {
-  padding: 0;
+#BotonesPokemon {
+  padding: 1rem;
 }
 
 #TipoPokemon {
@@ -74,45 +98,10 @@ body {
   box-shadow: inset 0px 0px 20px 0px;
 }
 
-.container {
-  background: #d60606;
-  border-style: solid;
-  border-radius: 15px;
-}
-
 #colcentral {
   background: #8b0909;
   border-radius: 0px;
   border-style: none;
-}
-
-#aquivaeltipo {
-  margin: 0;
-  padding: 0;
-  color: rgb(68,242,7);
-  font-size: 24px;
-  text-align: center;
-}
-
-#aquivaelbuscador {
-  border-radius: 17px;
-  box-shadow: inset 0px 0px 4px 0px rgb(0,0,0);
-  text-shadow: 0px 0px 0px rgb(0,0,0);
-  text-align: left;
-  color: rgb(0,0,0);
-  border-style: solid;
-  border-color: rgb(0,0,0);
-  margin: 0.3rem;
-  margin-top: 24px;
-  margin-bottom: 35px;
-  padding: 9px 2px;
-  width: 80%;
-  letter-spacing: 6px;
-  line-height: 24px;
-}
-
-#BuscadorPokemon {
-  text-align: center;
 }
 
 #InfoPokemon {
@@ -127,18 +116,29 @@ body {
   border: 0.5rem solid rgb(255,255,255) ;
 }
 
+#pokedex9{
+  height: 104px;
+  padding: 0;
+}
+
 #aquivalainfo {
-  padding: 37px;
+  padding: 1rem;
+  text-shadow: 0px 0px 3px rgb(0,0,0);
 }
 
 #frame2 {
   padding: 0px;
 }
 
-#imglogo {
+#pokedex6 {
+  width: 100%;
+  height: 100%;
 }
 
-#logo {
+#blueButtons {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 #botonizq {
