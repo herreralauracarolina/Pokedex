@@ -1,0 +1,143 @@
+div {
+  padding: 0px;
+}
+
+#pokedex1 {
+  text-align: left;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Press Start 2P', serif;
+  background: url("../../assets/img/pokall.png"), #ffffff;
+}
+
+#ImagenPokemon {
+  padding: 0;
+  margin: 1rem;
+  background: #4e7375;
+  border-radius: 17px;
+  box-shadow: inset 0px 0px 20px 5px;
+  border: 0.5rem solid rgb(255,255,255) ;
+  text-align: center;
+}
+
+#IdPokemon {
+  background: #4e7375;
+  border-radius: 17px;
+  margin: 1rem;
+  border: 0.32rem solid rgb(255,255,255) ;
+  box-shadow: inset 0px 0px 20px 0px;
+}
+
+#pokedex2 {
+  padding: 0px;
+}
+
+#frame1 {
+  width: 100%;
+  height: 100%;
+}
+
+#aquivaelid {
+  padding: 0;
+  color: rgb(68,242,7);
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 0px 0px 3px rgb(0,0,0);
+}
+
+#BotonesPokemon {
+  padding: 0;
+}
+
+#pokedex8 {
+  padding: 0;
+}
+
+#TipoPokemon {
+  padding: 0;
+  background: #4e7375;
+  border-radius: 17px;
+  margin: 1rem;
+  border: 0.32rem solid rgb(255,255,255) ;
+  box-shadow: inset 0px 0px 20px 0px;
+}
+
+.container {
+  background: #d60606;
+  border-style: solid;
+  border-radius: 15px;
+}
+
+#colcentral {
+  background: #8b0909;
+  border-radius: 0px;
+  border-style: none;
+}
+
+#aquivaeltipo {
+  margin: 0;
+  padding: 0;
+  color: rgb(68,242,7);
+  font-size: 24px;
+  text-align: center;
+}
+
+#aquivaelbuscador {
+  border-radius: 17px;
+  box-shadow: inset 0px 0px 4px 0px rgb(0,0,0);
+  text-shadow: 0px 0px 0px rgb(0,0,0);
+  text-align: left;
+  color: rgb(0,0,0);
+  border-style: solid;
+  border-color: rgb(0,0,0);
+  margin: 0.3rem;
+  margin-top: 24px;
+  margin-bottom: 35px;
+  padding: 9px 2px;
+  width: 80%;
+  letter-spacing: 6px;
+  line-height: 24px;
+}
+
+#BuscadorPokemon {
+  text-align: center;
+}
+
+#InfoPokemon {
+  margin: 1rem;
+  padding: 0;
+  background: #4e7375;
+  border-radius: 17px;
+  box-shadow: inset 0px 0px 20px 0px rgb(0,0,0);
+  color: rgb(68,242,7);
+  font-size: 24px;
+  text-align: center;
+  border: 0.5rem solid rgb(255,255,255) ;
+}
+
+#aquivalainfo {
+  padding: 37px;
+}
+
+#frame2 {
+  padding: 0px;
+}
+
+#imglogo {
+}
+
+#logo {
+}
+
+#botonizq {
+}
+
+#botoncentral {
+}
+
+#botonder {
+}
+
