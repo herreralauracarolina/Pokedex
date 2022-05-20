@@ -26,7 +26,7 @@ const mostrarCarta = (pokemon) => {//pokemon es la data de la funcion anterior
     const imagen = document.querySelector('#ImagenPokemon')
     const neimo = document.querySelector('#TipoPokemon').innerHTML
     const id = document.querySelector('#IdPokemon').innerHTML
-    const ability = document.querySelector('#InfoPokemon')
+    const ability = document.querySelector('#InfoPokemon').innerHTML
 
     document.querySelector('#aquivaelpoke').setAttribute('src', pokemon.sprites.other.dream_world.front_default)
     document.querySelector('#aquivaeltipo').innerHTML= pokemon.name
@@ -37,7 +37,6 @@ const mostrarCarta = (pokemon) => {//pokemon es la data de la funcion anterior
     neimo.appendChild(neimo)
     id.appendChild(id)
     ability.appendChild(ability)
-    
     
 }
 
