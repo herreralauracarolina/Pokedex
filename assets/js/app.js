@@ -31,13 +31,14 @@ const mostrarCarta = (pokemon) => {
   document.querySelector("#aquivaelstat3").textContent = "DEF " + pokemon.stats[2].base_stat;
   document.querySelector("#aquivalaexp").textContent = "EXP: " + pokemon.base_experience;
 
-  document.querySelector("#aquivaeltype1").textContent = "Type: " + pokemon.types[0].type.name;
+  document.querySelector("#aquivaeltype1").textContent = pokemon.types[0].type.name;
 
   document.querySelector("#aquivalainfo1").textContent = pokemon.abilities[0].ability.name;
   document.querySelector("#aquivalainfo2").textContent = pokemon.abilities[1].ability.name;
   document.querySelector("#aquivalainfo3").textContent = pokemon.abilities[2].ability.name;
   
-  document.querySelector("#aquivaeltype1").textContent = pokemon.types[1].type.name;
+  document.querySelector("#aquivaeltype2").textContent = pokemon.types[1].type.name;
+
 
 
 };
