@@ -29,9 +29,9 @@ const mostrarCarta = (pokemon) => {
   document.querySelector("#aquivaelstat1").textContent = "HP " + pokemon.stats[0].base_stat;
   document.querySelector("#aquivaelstat2").textContent = "ATK " + pokemon.stats[1].base_stat;
   document.querySelector("#aquivaelstat3").textContent = "DEF " + pokemon.stats[2].base_stat;
-  document.querySelector("#aquivalalocation").textContent = "weight: " + pokemon.weight;
+  document.querySelector("#aquivalaexp").textContent = "EXP: " + pokemon.base_experience;
 
-  document.querySelector("#aquivaeltype1").textContent = pokemon.types[0].type.name;
+  document.querySelector("#aquivaeltype1").textContent = "Type: " + pokemon.types[0].type.name;
 
   document.querySelector("#aquivalainfo1").textContent = pokemon.abilities[0].ability.name;
   document.querySelector("#aquivalainfo2").textContent = pokemon.abilities[1].ability.name;
