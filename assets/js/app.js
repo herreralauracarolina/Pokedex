@@ -13,6 +13,7 @@ const fetchData = async (id) => {
     const data = await res.json();
 
     mostrarCarta(data);
+
   } catch (error) {
     console.log(error);
   }
@@ -22,27 +23,55 @@ const mostrarCarta = (pokemon) => {
 
   console.log(pokemon);  
 
-  document.querySelector("#aquivaelpoke").setAttribute("src", pokemon.sprites.front_default);
-  document.querySelector("#aquivaelnombre").textContent = pokemon.name;
-  document.querySelector("#aquivaelid").textContent = pokemon.id;
+  document.querySelector("#aquivaelpoke").setAttribute("src", pokemon.sprites.front_default); //trae imagen
+  document.querySelector("#aquivaelnombre").textContent = pokemon.name; // trae el nombre
+  document.querySelector("#aquivaelid").textContent = pokemon.id; // trae el id del pokemon
   
-  document.querySelector("#aquivaelstat1").textContent = "HP " + pokemon.stats[0].base_stat;
-  document.querySelector("#aquivaelstat2").textContent = "ATK " + pokemon.stats[1].base_stat;
-  document.querySelector("#aquivaelstat3").textContent = "DEF " + pokemon.stats[2].base_stat;
-  document.querySelector("#aquivalaexp").textContent = "EXP: " + pokemon.base_experience;
+  document.querySelector("#aquivaelstat1").textContent = "HP " + pokemon.stats[0].base_stat; //trae el stat de vida
+  document.querySelector("#aquivaelstat2").textContent = "ATK " + pokemon.stats[1].base_stat; //el stat de ataque
+  document.querySelector("#aquivaelstat3").textContent = "DEF " + pokemon.stats[2].base_stat; // el stat de defensa
+  document.querySelector("#aquivalaexp").textContent = "EXP: " + pokemon.base_experience; // la experiencia base
 
-  document.querySelector("#aquivaeltype1").textContent = pokemon.types[0].type.name;
+  document.querySelector("#aquivaeltype1").textContent = pokemon.types[0].type.name; // el tipo de pokemon (hierba, veneno, volador, etc etc)
 
-  document.querySelector("#aquivalainfo1").textContent = pokemon.abilities[0].ability.name;
-  document.querySelector("#aquivalainfo2").textContent = pokemon.abilities[1].ability.name;
-  document.querySelector("#aquivalainfo3").textContent = pokemon.abilities[2].ability.name;
+  document.querySelector("#aquivalainfo1").textContent = pokemon.abilities[0].ability.name; // trae la habilidad pasiva del pokemon
+  document.querySelector("#aquivalainfo2").textContent = pokemon.abilities[1].ability.name; //trae la segunda habilidad pasiva del pokemon (si tiene)
+  document.querySelector("#aquivalainfo3").textContent = pokemon.abilities[2].ability.name; //trae la tercera habilidad pasiva del pokemon (si tiene)
   
-  document.querySelector("#aquivaeltype2").textContent = pokemon.types[1].type.name;
-
-
-
+  document.querySelector("#aquivaeltype2").textContent = pokemon.types[1].type.name; // algunos pokemon tienen dos tipos (hierba, veneno, etc etc) si tiene la trae
 };
 
+function abilities(){ 
+
+  document.getElementById("abilities").style.display = "block";
+  document.getElementById("stats").style.display = "none";
+  document.getElementById("types").style.display = "none";
+  document.getElementById("expbase").style.display = "none";
+};
+
+function stats(){ 
+
+  document.getElementById("abilities").style.display = "none";
+  document.getElementById("stats").style.display = "block";
+  document.getElementById("types").style.display = "none";
+  document.getElementById("expbase").style.display = "none";
+};
+
+function types(){ 
+
+  document.getElementById("abilities").style.display = "none";
+  document.getElementById("stats").style.display = "none";
+  document.getElementById("types").style.display = "block";
+  document.getElementById("expbase").style.display = "none";
+};
+
+function expbase(){ 
+
+  document.getElementById("abilities").style.display = "none";
+  document.getElementById("stats").style.display = "none";
+  document.getElementById("types").style.display = "none";
+  document.getElementById("expbase").style.display = "block";
+};
 
 // //const imagen = document.querySelector("#ImagenPokemon");
 // const neimo = document.querySelector("#NombrePokemon");
