@@ -41,6 +41,37 @@ const mostrarCarta = (pokemon) => {
   document.querySelector("#aquivaeltype2").textContent = pokemon.types[1].type.name; // algunos pokemon tienen dos tipos (hierba, veneno, etc etc) si tiene la trae
 };
 
+function abilities(){ 
+
+  document.getElementById("abilities").style.display = "block";
+  document.getElementById("stats").style.display = "none";
+  document.getElementById("types").style.display = "none";
+  document.getElementById("expbase").style.display = "none";
+};
+
+function stats(){ 
+
+  document.getElementById("abilities").style.display = "none";
+  document.getElementById("stats").style.display = "block";
+  document.getElementById("types").style.display = "none";
+  document.getElementById("expbase").style.display = "none";
+};
+
+function types(){ 
+
+  document.getElementById("abilities").style.display = "none";
+  document.getElementById("stats").style.display = "none";
+  document.getElementById("types").style.display = "block";
+  document.getElementById("expbase").style.display = "none";
+};
+
+function expbase(){ 
+
+  document.getElementById("abilities").style.display = "none";
+  document.getElementById("stats").style.display = "none";
+  document.getElementById("types").style.display = "none";
+  document.getElementById("expbase").style.display = "block";
+};
 
 // //const imagen = document.querySelector("#ImagenPokemon");
 // const neimo = document.querySelector("#NombrePokemon");
