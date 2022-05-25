@@ -41,6 +41,11 @@ const mostrarCarta = (pokemon) => {
   document.querySelector("#aquivaeltype2").textContent = pokemon.types[1].type.name; // algunos pokemon tienen dos tipos (hierba, veneno, etc etc) si tiene la trae
 };
 
+  document.getElementById("abilities").style.display = "block";
+  document.getElementById("stats").style.display = "none";
+  document.getElementById("types").style.display = "none";
+  document.getElementById("expbase").style.display = "none";
+
 function abilities(){ 
 
   document.getElementById("abilities").style.display = "block";
@@ -72,8 +77,4 @@ function expbase(){
   document.getElementById("types").style.display = "none";
   document.getElementById("expbase").style.display = "block";
 };
-
-// //const imagen = document.querySelector("#ImagenPokemon");
-// const neimo = document.querySelector("#NombrePokemon");
-// const id = document.querySelector("#IdPokemon");
 
